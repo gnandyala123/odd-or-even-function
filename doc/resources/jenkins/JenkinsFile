@@ -14,7 +14,7 @@ node {
             def RESOURCE_GROUP = 'jenkins-get-started-rg' 
             def FUNC_NAME = 'gautamjenkinstest'
             // login Azure
-            withCredentials([usernamePassword(credentialsId: 'jenkinsASP2', passwordVariable: 'IlQgun43SSCA~yRlqUnVE4S1DwdHF2r98W', usernameVariable: '644276fd-e1ce-4fa7-ada7-ad81efa4e215')]) {
+            withCredentials([usernamePassword(credentialsId: 'gautamjenkinstester', passwordVariable: 'AGMrAtH2p~rA_Av2Nvejd2ZuZGaB~ZePPQ', usernameVariable: 'bafaf60a-126c-4691-9c5f-264e57160d5b')]) {
             sh '''
                 az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
                 az account set -s $AZURE_SUBSCRIPTION_ID
